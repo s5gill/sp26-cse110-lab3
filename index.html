@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meeting Minutes.">
+    <title>Team Meeting Minutes</title>
+    <link rel="icon" href="assets/team_icon.png" type="image/png">
+  </head>
+  <body>
+    <header>
+      <h1>Team Meeting Minutes</h1>
+
+      <p>
+        <strong>Meeting Topic:</strong> Team Check In<br>
+        <strong>Date:</strong> April 13, 2026
+      </p>
+
+      <nav>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#unfinished">Unfinished Business</a></li>
+          <li><a href="#new_business">New Business</a></li>
+          <li><a href="#comments">Comments</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#feedback">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="overview">
+        <h2>Meeting Overview</h2>
+        <div>
+          <p>
+            Meeting minutes summarize the weekly <span>Team</span> meeting.
+            The purpose of the meeting was to review progress, discuss tasks,
+            and decide on what to do next.
+          </p>
+        </div>
+      </section>
+
+      <section id="attendance">
+        <h2>Attendance</h2>
+
+        <div>
+          <h3>Present</h3>
+          <ul>
+            <li>Sirtaj Gill</li>
+            <li>Mr Example</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Absent</h3>
+          <ul>
+            <li>Mrs Example</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Review progress</li>
+          <li>Discuss unfinished tasks</li>
+          <li>Plan for the week</li>
+          <li>Record any questions and concerns</li>
+          <li>Capture media and whiteboard notes</li>
+        </ol>
+      </section>
+
+      <section id="unfinished">
+        <h2>Unfinished Business</h2>
+        <p>
+          <b>Reminder:</b> The team needs to finish the website layout.
+        </p>
+        <ul>
+          <li>Website layout needs to be edited</li>
+          <li>Roles are not fully assigned</li>
+        </ul>
+      </section>
+
+      <section id="new_business">
+        <h2>New Business</h2>
+        <p>
+          The team discussed adding a FAQ section.
+        </p>
+        <ul>
+          <li>Create a draft of the FAQ section</li>
+          <li>Prepare GitHub Pages publication for the next checkpoint</li>
+        </ul>
+      </section>
+
+      <section id="comments">
+        <h2>Comments, Questions, and Concerns</h2>
+        <p>
+          <i>Design note:</i> The team agreed to keep the first version of
+          the page simple.
+        </p>
+        <p>
+          <em>Accessibility concern:</em> Images and media should include
+          descriptive text and clear labels.
+        </p>
+
+        <details>
+          <summary>Open action item summary</summary>
+          <p>
+            Sirtaj will update the HTML structure, Mr Example will collect the meeting
+            media, and Mrs Example will review everything before submission.
+          </p>
+        </details>
+      </section>
+
+      <section id="visuals">
+        <h2>Diagrams and Visuals</h2>
+        <p>
+          The image below is the diagram shown during the meeting.
+        </p>
+        <img
+          src="assets/whiteboard_diagram.jpg"
+          alt="Whiteboard diagram showing a homepage connected to attendance, agenda, media, and feedback sections"
+          width="500"
+        >
+      </section>
+
+      <section id="media">
+        <h2>Meeting Recordings</h2>
+
+        <h3>Audio Recording</h3>
+        <audio controls>
+          <source src="assets/meeting_audio.mp3" type="audio/mpeg">
+          Audio not supported.
+        </audio>
+
+        <h3>Video Recording</h3>
+        <video controls width="500">
+          <source src="assets/meeting_video.mp4" type="video/mp4">
+          Video not supported.
+        </video>
+      </section>
+
+      <hr>
+
+      <section id="feedback">
+        <h2>Feedback Form</h2>
+        <p>
+          Form.
+        </p>
+
+        <form>
+          <fieldset>
+            <legend>Meeting Feedback</legend>
+
+            <p>
+              <label for="reviewer_name">Name:</label>
+              <input type="text" id="reviewer_name" name="reviewer_name" list="member_names">
+            </p>
+
+            <datalist id="member_names">
+              <option value="Sirtaj"></option>
+              <option value="Mr Example"></option>
+              <option value="Mrs Example"></option>
+            </datalist>
+
+            <p>
+              <label for="review_date">Date Reviewed:</label>
+              <input type="date" id="review_date" name="review_date">
+            </p>
+
+            <p>Which section was most useful?</p>
+            <p>
+              <input type="radio" id="overview_radio" name="most_useful" value="overview">
+              <label for="overview_radio">Meeting Overview</label><br>
+
+              <input type="radio" id="attendance_radio" name="most_useful" value="attendance">
+              <label for="attendance_radio">Attendance</label><br>
+
+              <input type="radio" id="agenda_radio" name="most_useful" value="agenda">
+              <label for="agenda_radio">Agenda</label><br>
+
+              <input type="radio" id="unfinished_radio" name="most_useful" value="unfinished_business">
+              <label for="unfinished_radio">Unfinished Business</label><br>
+
+              <input type="radio" id="new_business_radio" name="most_useful" value="new_business">
+              <label for="new_business_radio">New Business</label><br>
+
+              <input type="radio" id="comments_radio" name="most_useful" value="comments">
+              <label for="comments_radio">Comments / Questions / Concerns</label><br>
+
+              <input type="radio" id="visuals_radio" name="most_useful" value="visuals">
+              <label for="visuals_radio">Diagrams / Visuals</label><br>
+
+              <input type="radio" id="media_radio" name="most_useful" value="media">
+              <label for="media_radio">Audio / Video Recordings</label><br>
+
+              <input type="radio" id="feedback_radio" name="most_useful" value="feedback">
+              <label for="feedback_radio">Feedback Form</label>
+            </p>
+
+
+
+
+            <p>What should be included next time?</p>
+            <p>
+              <input type="checkbox" id="timeline_check" name="include_next_time" value="timeline">
+              <label for="timeline_check">Timeline reminders</label><br>
+
+              <input type="checkbox" id="roles_check" name="include_next_time" value="roles">
+              <label for="roles_check">Role assignments</label>
+            </p>
+
+            <p>
+              <label for="role_select">Your role:</label>
+              <select id="role_select" name="role_select">
+                <option value="">Select one</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+                <option value="reviewer">Reviewer</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="extra_notes">Additional notes:</label><br>
+              <textarea id="extra_notes" name="extra_notes" rows="5" cols="45"></textarea>
+            </p>
+
+            <p>
+              <button type="submit">Submit Feedback</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Prepared for the meeting minutes.<br>
+        Contact the team lead
+        <a href="mailto:s5gill@ucsd.edu">s5gill@ucsd.edu</a>.
+      </p>
+    </footer>
+  </body>
+</html>

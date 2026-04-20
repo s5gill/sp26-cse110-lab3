@@ -1,2 +1,2 @@
-# sp26-cse110-lab3
-week 3 lab
+# Lab 2 - Starter
+https://s5gill.github.io/Lab2_Starter/
