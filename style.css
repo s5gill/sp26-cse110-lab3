@@ -34,9 +34,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: rgba(10, 10, 10, 0.94);
+  background-color: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
-  border-bottom: 2px solid rgba(220, 38, 38, 0.28);
+  border-bottom: 2px solid rgba(31, 60, 136, 0.12);
   padding: 1rem 5vw 1rem 5vw;
 }
 
@@ -52,7 +52,7 @@ body {
 
 @supports (color: color(display-p3 1 1 1)) {
   .site-header h1 {
-    color: color(display-p3 0.9 0.18 0.2 / 1);
+    color: color(display-p3 0.15 0.3 0.72 / 1);
   }
 }
 
@@ -88,7 +88,7 @@ a[href^="#"] {
   padding: 0.6em 1em;
   border: 1px solid var(--border-soft, rgba(31, 60, 136, 0.18));
   border-radius: 999px;
-  background-color: #181818;
+  background-color: #ffffff;
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -98,7 +98,7 @@ a[href^="#"]:hover {
 }
 
 a[href^="#"]:active {
-  background-color: rgba(220, 38, 38, 0.2);
+  background-color: rgba(31, 60, 136, 0.16);
 }
 
 main {
@@ -110,7 +110,7 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-rows: auto;
   gap: 1.25rem;
-  align-items: start;
+  align-items: stretch;
   position: relative;
 }
 
@@ -126,8 +126,13 @@ section.card {
   border-width: 2px;
   border-radius: 18px;
   padding: 1.25rem 1rem 1.25rem 1rem;
-  margin: 0 0 1rem 0;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  margin: 0;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
 }
 
 #feedback,
@@ -160,7 +165,7 @@ h3 + ul {
 }
 
 .inline-highlight {
-  background-color: rgba(127, 29, 29, 0.35);
+  background-color: rgba(255, 247, 204, 0.9);
   padding: 0.15em 0.45em;
   border-radius: 999px;
 }
@@ -184,8 +189,8 @@ summary {
 }
 
 #attendance div {
-  background-color: rgba(220, 38, 38, 0.08);
-  border: 1px solid rgba(220, 38, 38, 0.18);
+  background-color: rgba(31, 60, 136, 0.04);
+  border: 1px solid rgba(31, 60, 136, 0.08);
   border-radius: 14px;
   padding-top: 0.8rem;
   padding-right: 0.8rem;
@@ -251,15 +256,15 @@ textarea {
   width: 100%;
   max-width: 32rem;
   min-width: 12rem;
-  border: 1px solid rgba(220, 38, 38, 0.35);
+  border: 1px solid rgba(31, 60, 136, 0.2);
   border-radius: 12px;
   padding: 0.75rem;
-  background-color: #111;
+  background-color: #fff;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  accent-color: #dc2626;
+  accent-color: #1f3c88;
 }
 
 button {
@@ -268,7 +273,7 @@ button {
   height: 3rem;
   color: white;
   background-color: var(--accent, #2563eb);
-  border: 1px solid #7f1d1d;
+  border: 1px solid #1e40af;
   border-radius: 999px;
   padding: 0.75rem 1.25rem;
 }
@@ -282,14 +287,14 @@ button:active {
 }
 
 details {
-  background-color: rgba(127, 29, 29, 0.18);
-  border: 1px dashed rgba(248, 113, 113, 0.45);
+  background-color: rgba(255, 247, 230, 0.5);
+  border: 1px dashed rgba(245, 158, 11, 0.5);
   border-radius: 12px;
   padding: 0.9rem;
 }
 
 #comments:has(details[open]) {
-  background-color: rgba(69, 10, 10, 0.95);
+  background-color: rgba(255, 251, 235, 0.95);
 }
 
 img,
@@ -305,7 +310,7 @@ audio.media-frame {
 }
 
 .media-frame {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
 }
 
 footer p a {
@@ -320,7 +325,7 @@ hr {
   position: static;
   text-align: center;
   padding: 1.5rem 5vw 2rem 5vw;
-  background-color: rgba(12, 12, 12, 0.88);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 900px) {
@@ -357,34 +362,4 @@ hr {
   video {
     min-width: 0;
   }
-}
-
-
-section.card p,
-section.card li,
-section.card label,
-section.card legend,
-section.card summary,
-footer,
-.site-footer,
-input,
-select,
-textarea,
-details {
-  color: var(--text-color, #f2f2f2);
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: rgba(242, 242, 242, 0.65);
-}
-
-a[href^="#"],
-footer p a {
-  color: #fca5a5;
-}
-
-a[href^="#"]:hover,
-footer p a:hover {
-  color: #ffffff;
 }
