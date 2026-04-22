@@ -135,11 +135,11 @@ section.card {
   border-radius: 18px;
   padding: 1.25rem 1rem 1.25rem 1rem;
   margin: 0;
-  height: 260px;
+  min-height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  overflow: auto;
+  overflow: visible;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
 }
 
@@ -372,6 +372,25 @@ hr {
   }
 }
 
+
+#visuals,
+#media,
+#feedback {
+  height: auto;
+  overflow: visible;
+}
+
+
+
+#overview,
+#attendance,
+#agenda,
+#unfinished,
+#new_business,
+#comments {
+  height: 260px;
+  overflow: auto;
+}
 
 #visuals,
 #media,
