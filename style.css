@@ -371,3 +371,11 @@ hr {
     min-width: 0;
   }
 }
+
+
+#visuals,
+#media,
+#feedback {
+  height: auto;
+  overflow: visible;
+}
