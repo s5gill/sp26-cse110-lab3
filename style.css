@@ -62,6 +62,14 @@ body {
   margin: 0 auto 1rem auto;
 }
 
+.site-header > p {
+  color: #dc2626;
+}
+
+.site-header > p strong {
+  color: #dc2626;
+}
+
 .site-header strong {
   display: inline;
 }
