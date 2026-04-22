@@ -50,12 +50,6 @@ body {
   margin-left: 0;
 }
 
-@supports (color: color(display-p3 1 1 1)) {
-  .site-header h1 {
-    color: color(display-p3 0.15 0.3 0.72 / 1);
-  }
-}
-
 .site-header > p {
   text-align: center;
   max-width: 42rem;
@@ -219,19 +213,17 @@ summary {
   max-width: 60rem;
 }
 
-#feedback {
-  & form {
-    display: grid;
-    gap: 1rem;
-  }
+#feedback form {
+  display: grid;
+  gap: 1rem;
+}
 
-  & label {
-    font-weight: 600;
-  }
+#feedback label {
+  font-weight: 600;
+}
 
-  & button {
-    font: inherit;
-  }
+#feedback button {
+  font: inherit;
 }
 
 .feedback-form:has(input:focus, textarea:focus, select:focus) fieldset {
