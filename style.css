@@ -398,3 +398,36 @@ hr {
   height: auto;
   overflow: visible;
 }
+
+
+
+/* Force these three sections to expand fully with no internal scrollbar */
+section.card#visuals,
+section.card#media,
+section.card#feedback {
+  grid-column: 1 / -1;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  display: block;
+}
+
+section.card#visuals img,
+section.card#visuals video,
+section.card#media img,
+section.card#media video,
+section.card#media audio {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+section.card#feedback form,
+section.card#feedback fieldset,
+section.card#feedback textarea,
+section.card#feedback input[type="text"],
+section.card#feedback input[type="date"],
+section.card#feedback select {
+  max-width: 100%;
+  min-width: 0;
+}
